@@ -38,7 +38,7 @@ gem 'bulk_insert'
 gem 'kaminari'
 gem 'rest-client'
 gem 'china_sms'
-gem 'grape', '0.17.0'
+gem 'grape', '1.1.0'
 gem 'grape-entity', '0.6.0'
 gem 'grape-swagger'
 
