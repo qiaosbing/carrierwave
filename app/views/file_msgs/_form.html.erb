@@ -1,0 +1,17 @@
+<%= form_with(model: file_msg, local: true) do |form| %>
+  <% if file_msg.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(file_msg.errors.count, "error") %> prohibited this file_msg from being saved:</h2>
+
+      <ul>
+      <% file_msg.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
