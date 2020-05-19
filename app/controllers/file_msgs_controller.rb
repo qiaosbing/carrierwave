@@ -4,7 +4,13 @@ class FileMsgsController < ApplicationController
   # GET /file_msgs
   # GET /file_msgs.json
   def index
-    @file_msgs = FileMsg.all
+    localfile = params[:localfile]
+    s_file =  FileMsg.new
+    Rails.logger.info "---1--#{localfile.inspect}"
+    s_file.file_url = localfile
+    s_file.save
+    Rails.logger.info "---2--#{s_file.inspect}"
+
   end
 
   # GET /file_msgs/1

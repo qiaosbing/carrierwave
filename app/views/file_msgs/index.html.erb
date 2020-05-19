@@ -1,25 +1,29 @@
-<p id="notice"><%= notice %></p>
+<%= form_tag 'mystore', :multipart => true do%>
+  <%= file_field_tag :localfile %>
+  <%= submit_tag "上传"%>
+<% end %>
+<!--<p id="notice"><%#= notice %></p>-->
 
-<h1>File Msgs</h1>
+<!--<h1>File Msgs</h1>-->
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<!--<table>-->
+<!--  <thead>-->
+<!--    <tr>-->
+<!--      <th colspan="3"></th>-->
+<!--    </tr>-->
+<!--  </thead>-->
 
-  <tbody>
-    <% @file_msgs.each do |file_msg| %>
-      <tr>
-        <td><%= link_to 'Show', file_msg %></td>
-        <td><%= link_to 'Edit', edit_file_msg_path(file_msg) %></td>
-        <td><%= link_to 'Destroy', file_msg, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<!--  <tbody>-->
+    <%# @file_msgs.each do |file_msg| %>
+<!--      <tr>-->
+<!--        <td><%#= link_to 'Show', file_msg %></td>-->
+<!--        <td><%#= link_to 'Edit', edit_file_msg_path(file_msg) %></td>-->
+<!--        <td><%#= link_to 'Destroy', file_msg, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+<!--      </tr>-->
+    <%# end %>
+<!--  </tbody>-->
+<!--</table>-->
 
-<br>
+<!--<br>-->
 
-<%= link_to 'New File Msg', new_file_msg_path %>
+<%#= link_to 'New File Msg', new_file_msg_path %>
